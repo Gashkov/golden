@@ -1,0 +1,442 @@
+/* Fonts */
+
+@font-face {
+    font-family:'Montserrat';
+    src: url('../fonts/Montserrat Bold.woff2') format('woff2'),
+		url('../fonts/Montserrat Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+
+@font-face {
+    font-family:'Montserrat';
+    src: url('../fonts/Montserrat Regular.woff2') format('woff2'),
+		url('../fonts/Montserrat Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+
+@font-face {
+    font-family:'Montserrat';
+    src: url('../fonts/Montserrat Light.woff2') format('woff2'),
+		url('../fonts/Montserrat Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+
+@font-face {
+    font-family:'Droid Serif';
+    src: url('../fonts/Droid Serif Italic.woff2') format('woff2'),
+		url('../fonts/Droid Serif Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0020-2044;
+}
+
+body {
+	font-family:'Montserrat', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2 {
+	margin: 0 0 35px 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+/* hero start */
+
+
+
+.hero {
+	height: 100vh;
+	background: url('../images/hero-bg.jpg') center / cover no-repeat;
+}
+
+.hero-content {
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	padding: 200px 0 0 0;
+}
+
+.hero-cta {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 18px;
+	border-radius: 3px;
+	background-color: #fed136;
+	padding: 22px 50px;
+	color: #fff;
+	display: inline-block;
+}
+
+.hero-cta:hover {
+	background-color: red;
+}
+
+.header {
+	max-width: 975px;
+	margin: 0 auto;
+	padding: 44px 15px  0 15px;
+}
+
+.logo {
+	float: left; 
+}
+
+.nav {
+	float: right;
+}
+
+.nav-item {
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.nav-item:last-child {
+	margin-right: 0;
+}
+
+.nav-item a {
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.title {
+	text-transform: uppercase;
+	margin-bottom: 50px;
+	font-size: 75px;
+}
+
+.subtitle {
+	font-size: 40px;
+	font-family:'Droid Serif';
+	font-weight: 400;
+}
+/* hero end */
+
+.section {
+	padding: 115px 0;
+}
+
+.main-title {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 40px;
+	color: #222222;
+}
+
+.main-subtitle {
+	text-align: center;
+	font-family:'Droid Serif';
+	font-size: 16px;
+	font-weight: 400;
+	color: #777777;
+	margin-bottom: 100px;
+}
+
+.container {
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+.container_small {
+	max-width: 875px;
+}
+
+.row-portfolio {
+	margin: 0 -17.5px;
+}
+
+.column {
+	float: left;
+	width: 33.3333%;
+}
+
+.services-item {
+	padding: 0 27px;
+	text-align: center;
+}
+
+.circle {
+	width: 74px;
+	height: 74px;
+	border: 2px solid #fed136;
+	border-radius: 50%;
+	margin: 0 auto;
+	background-image: url(../images/spritesheet.png);
+  background-repeat: no-repeat;
+}
+
+.circle-basket {
+  background-position: 0 0;
+}
+
+.circle-laptop {
+  background-position: -75px 4px;
+}
+
+.circle-locked {
+	background-position: -65px -65px;
+}
+
+.circle img {
+	line-height: 74px;
+}
+
+/*/////////////////*/
+/*start Our portfolio*/
+/*/////////////////*/
+.portfolio {
+	background-color: #f7f7f7;
+}
+.portfolio-item {
+	padding: 25px 17.5px;
+}
+.portfolio-img {
+ 	max-width: 291px;
+ 	margin: auto;
+}
+.text-after-the-picture {
+	background-color: #fff;
+	text-align: center;
+	padding: 30px 0;
+	margin-top: -2px;
+}
+.portfolio-title {
+	font-weight: 700;
+	margin: auto;
+	color: #333333;
+	font-size: 18px;
+}
+.portfolio-subtitle {
+	font-family:'Droid Serif';
+	margin: auto;
+	color: #737373;
+	font-size: 14px;
+}
+
+
+/*
+	end portfolio
+*/
+
+/*
+	About Us section
+*/
+
+.container-small {
+	max-width: 880px;
+}
+
+.about-content {
+	width: 39.8%;
+	float: left;
+	text-align: right;
+	padding: 0 40px 0 0;
+}
+
+.about-content_right {
+	float: right;
+	padding: 0 0 0 40px;
+	text-align: left;
+}
+
+.about-content h4 {
+	margin: 0 0 5px 0;
+	font-size: 18px;
+}
+
+.about-content p {
+	font-size: 14px;
+	line-height: 1.57;
+}
+
+.about-circle-wrap {
+	width: 20.4%;
+	float: left;
+}
+
+.about-circle-wrap_right {
+	float: right;
+}
+
+.about-circle {
+	width: 180px;
+	height: 180px;
+	background: url(../images/about-us_first.jpg) 100% 100% / cover no-repeat;
+	border: 5px solid #f1f1f1;
+	border-radius: 50%;
+	position: relative;
+}
+
+.about-circle:after {
+	content: '';
+	width: 2px;
+	height: 93px;
+	background-color: red;
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -98px;
+	margin: 0 auto;
+}
+
+.row-about {
+	margin-bottom: 93px;
+}
+
+/*//////////////////////*/
+/*start our amazing team*/
+/*//////////////////////*/
+.section-img {
+	background-color: #f9f9f9;
+}
+/*.row {
+не где не пригодился, может потом с расшерением контента
+}*/
+/*.img-item {
+ 	
+}*/
+.circle-img {
+	width: 220px;
+	height: 220px;
+	border: 1px solid red;
+	border-radius: 50%;
+	margin: auto;
+	margin-bottom: 25px;
+}
+.center {
+	text-align: center;
+}
+.description-img {
+	margin: 0 0 15px 0;
+}
+.title-img {
+	margin: 0 0 2px 0;
+}
+.description-p {
+	font-size: 16px;
+	margin-top: 0;
+}
+.width {
+	width: 600px;
+	margin: auto;
+}
+/*link-social-network - описан в footer*/
+.margin-team {
+	margin: 0 5px 45px 5px;
+}
+/*//////////////*/
+/*Start partners*/
+/*//////////////*/
+.partners {
+	padding: 70px 0;
+	width: 810px;
+	margin: auto;
+}
+.partners img {
+	padding: 0 19px;
+}
+.Envato {
+	margin: 6px 0;
+}
+/*/////////////////
+ Start Contact us
+/////////////////*/
+.Contact-us {
+	background: url('../images/Map.png') no-repeat #222;
+	background-position: right;
+}
+.color-text {
+ 	color: #fff;
+}
+/*/////////////
+  start footer
+/////////////*/
+footer {
+	width: 970px;
+	margin: auto;
+}
+footer h4 {
+	padding: 0 15px;
+	font-weight: 400;
+	font-size: 14px;
+	color: #555;
+	float: left;
+	margin: 38px 0 45px 0;
+}
+/*link*/
+footer a:link {
+	color: #555;
+}
+footer a:hover {
+	color: green;
+}
+footer a:active {
+	color: red;
+}
+footer a:visited {
+	color: yellow;
+}
+/*end link*/
+/*///////////*/
+/*start social-network*/
+.social-network {
+	width: 213px;
+	margin: auto;
+}
+.link-social-network {
+	width: 40px;
+	height: 40px;
+	border: 1px solid red;
+	border-radius: 50%;
+	display: inline-block;
+}
+.margin {
+	margin: 20px 5px 30px 5px;
+}
+
+/*  Slick customuzing */
+
+.slick-arrow {
+	font-size: 45px;
+	position: absolute;
+	top: 40%;
+}
+
+.left-arrow {
+	left: 0;
+}
+
+.right-arrow {
+	right: 0;
+}
+
